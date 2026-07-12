@@ -726,6 +726,156 @@
             0%, 100% { opacity: 1; }
             50%      { opacity: 0.3; }
         }
+
+
+        /* ----------------------------------------
+           MEDIA QUERIES
+           Responsive breakpoints for tablet
+           and mobile devices.
+           ---------------------------------------- */
+
+        /* Tablet (max-width: 1024px) */
+        @media (max-width: 1024px) {
+            section {
+                padding: 80px 40px;
+            }
+
+            nav {
+                padding: 20px 30px;
+            }
+
+            .hero {
+                padding: 120px 40px 60px;
+            }
+
+            .about {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .bento {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .bento-card {
+                grid-column: span 1 !important;
+            }
+        }
+
+        /* Mobile (max-width: 768px) */
+        @media (max-width: 768px) {
+            nav {
+                padding: 16px 20px;
+            }
+
+            nav ul {
+                gap: 20px;
+            }
+
+            nav ul a {
+                font-size: 0.8rem;
+            }
+
+            section {
+                padding: 60px 20px;
+            }
+
+            .hero {
+                padding: 100px 20px 60px;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+                letter-spacing: -1.5px;
+            }
+
+            .hero-sub {
+                font-size: 1rem;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .scroll-indicator {
+                left: 20px;
+                bottom: 20px;
+                font-size: 0.7rem;
+            }
+
+            .about {
+                gap: 40px;
+            }
+
+            .stats {
+                gap: 30px;
+            }
+
+            .stat-num {
+                font-size: 2.2rem;
+            }
+
+            .bento {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-link {
+                width: 100%;
+                max-width: 320px;
+                justify-content: center;
+            }
+
+            footer {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+                padding: 24px 20px;
+            }
+        }
+
+        /* Small Mobile (max-width: 480px) */
+        @media (max-width: 480px) {
+            nav ul {
+                gap: 14px;
+            }
+
+            nav ul a {
+                font-size: 0.75rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-eyebrow {
+                font-size: 0.75rem;
+                letter-spacing: 2px;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .stats {
+                flex-direction: column;
+                gap: 20px;
+                align-items: flex-start;
+            }
+        }
     </style>
 </head>
 
